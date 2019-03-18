@@ -1,0 +1,26 @@
+{
+    "name": "tyesty/phpitbar",
+    "description": "Library for creating bitbar plugins with php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Stursberg",
+            "email": "tobias@stursberg.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "slevomat/coding-standard": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "tyesty\\phpitbar\\": "src/",
+            "tyesty\\phpbitbar\\Tests\\": "tests/"
+        }
+    }
+}

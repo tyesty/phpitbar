@@ -223,7 +223,7 @@ class LineParameter
 
         foreach ($this->params as $key => $value) {
             // check if there is a space, then add surrounding "s
-            if ($key !== 'bash' && strpos($value, ' ') !== false) {
+            if ($key !== 'bash' && strpos((string) $value, ' ') !== false) {
                 $value = '"' . $value . '"';
             }
 
